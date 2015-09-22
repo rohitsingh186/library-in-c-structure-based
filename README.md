@@ -14,4 +14,4 @@ This code implements a `library management program` in `C`. The `data structure`
 11> List Difference<br>
 12> List Symmetric Difference<br>
 <br>
-THis project was build as `new project` inside `dev-cpp`. So it might be best to use `dev-cpp` while using this code.For opening the whole project inside `dev-cpp`, look for `.dev file`.
+This project was build as `new project` inside `dev-cpp`. So it might be best to use `dev-cpp` while using this code.For opening the whole project inside `dev-cpp`, look for `.dev file`.
