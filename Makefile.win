@@ -1,0 +1,80 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.1.1.0
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = initialize_record.o main.o sort_list.o get_num_records.o list_unique.o is_empty.o is_full.o search_record.o num_avail_copies.o delete_record.o insert_record.o initial_reading.o get_topmost_author.o list_union.o list_intersection.o list_difference.o list_symmetric_difference.o remove_space_make_uppercase.o $(RES)
+LINKOBJ  = initialize_record.o main.o sort_list.o get_num_records.o list_unique.o is_empty.o is_full.o search_record.o num_avail_copies.o delete_record.o insert_record.o initial_reading.o get_topmost_author.o list_union.o list_intersection.o list_difference.o list_symmetric_difference.o remove_space_make_uppercase.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc  
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" 
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" 
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS   = $(INCS)  
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Project1.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "Project1.exe" $(LIBS)
+
+initialize_record.o: initialize_record.c
+	$(CC) -c initialize_record.c -o initialize_record.o $(CFLAGS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+sort_list.o: sort_list.c
+	$(CC) -c sort_list.c -o sort_list.o $(CFLAGS)
+
+get_num_records.o: get_num_records.c
+	$(CC) -c get_num_records.c -o get_num_records.o $(CFLAGS)
+
+list_unique.o: list_unique.c
+	$(CC) -c list_unique.c -o list_unique.o $(CFLAGS)
+
+is_empty.o: is_empty.c
+	$(CC) -c is_empty.c -o is_empty.o $(CFLAGS)
+
+is_full.o: is_full.c
+	$(CC) -c is_full.c -o is_full.o $(CFLAGS)
+
+search_record.o: search_record.c
+	$(CC) -c search_record.c -o search_record.o $(CFLAGS)
+
+num_avail_copies.o: num_avail_copies.c
+	$(CC) -c num_avail_copies.c -o num_avail_copies.o $(CFLAGS)
+
+delete_record.o: delete_record.c
+	$(CC) -c delete_record.c -o delete_record.o $(CFLAGS)
+
+insert_record.o: insert_record.c
+	$(CC) -c insert_record.c -o insert_record.o $(CFLAGS)
+
+initial_reading.o: initial_reading.c
+	$(CC) -c initial_reading.c -o initial_reading.o $(CFLAGS)
+
+get_topmost_author.o: get_topmost_author.c
+	$(CC) -c get_topmost_author.c -o get_topmost_author.o $(CFLAGS)
+
+list_union.o: list_union.c
+	$(CC) -c list_union.c -o list_union.o $(CFLAGS)
+
+list_intersection.o: list_intersection.c
+	$(CC) -c list_intersection.c -o list_intersection.o $(CFLAGS)
+
+list_difference.o: list_difference.c
+	$(CC) -c list_difference.c -o list_difference.o $(CFLAGS)
+
+list_symmetric_difference.o: list_symmetric_difference.c
+	$(CC) -c list_symmetric_difference.c -o list_symmetric_difference.o $(CFLAGS)
+
+remove_space_make_uppercase.o: remove_space_make_uppercase.c
+	$(CC) -c remove_space_make_uppercase.c -o remove_space_make_uppercase.o $(CFLAGS)
