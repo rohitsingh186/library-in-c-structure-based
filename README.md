@@ -1,8 +1,8 @@
 # library-management-in-c-structure-based
 
 This code implements a `library management program` in `C`. The `data structure` used to do this is `stucture`. Array of structures is being used to store data whenever required. THe basic functionalities provided within the management system are:-
-1> Insert\n
-2> Delete\n
+1> Insert<br>
+2> Delete
 3> Search
 4> Number of Records
 5> Is Empty
